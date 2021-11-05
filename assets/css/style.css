@@ -25,7 +25,7 @@ header {
     font-weight: bold;
     margin: 0;
     color: rgb(0, 0, 0);
-    text-shadow: 0 0 10px rgba(11, 63, 233, 0.5);
+    text-shadow: 0 0 10px #e7945d;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 40px;
     font-style: italic;
@@ -38,6 +38,8 @@ header {
   
   header nav {
     margin: 7px 0;
+   
+   
   }
   
   header nav ul {
@@ -58,7 +60,7 @@ header {
     
   }
   header nav ul li a:hover {
-    background-color:thistle;
+    background-color:#ff6600;
     color:rgb(104, 84, 173);
     border-radius: 15px;
     text-shadow: none;
@@ -69,14 +71,14 @@ header {
 
   /* style section*/
   section {
+   
     padding: 60px;
     display: flex;
     justify-content: space-between;
-
   }
 
   .one { 
-    
+   
     background-image:url(../images/back11.jpeg) ;
     background-size: 100% 100%;
     height:500PX;
@@ -84,14 +86,14 @@ header {
     flex-wrap: wrap;
   
   }
-  .one div p {
+  .one div h3{
     flex: 2;
     justify-content:flex-end;
     color:black ;
     font-size: 60px;
     margin: auto;
     border-radius: 20px;
-    background-color: thistle;
+    background-color: rgb(110, 149, 185);
     font-style:italic;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
  }
@@ -102,18 +104,29 @@ header {
     border:rgb(241, 241, 241) solid 5px;
     }
     .one div img:hover{
-      height: 500px;
-      width: 500px;
+      height: 250px;
+      width: 250px;
     }
     /* end style section*/
 
     /* style section 2*/
-    .about-i h2 {
-      font-size: 40px;
-    }
-  .about-i p {
+    .about-i {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      }
+
+      .about-i1 h2{
+        font-size:40px;
+        flex-grow: 0;
+        border-right: 3px solid #ff6600;
+        width:200px ;
+        height:100%;
+        margin: 0 auto 35px auto;
+     }
+  .about-i2 p {
+    position: relative;
     font-size: 35px;
-    border-left: 3px solid;
     color: black;
     padding-bottom: 20px;
     text-align: center;
@@ -122,32 +135,36 @@ header {
     text-shadow: rosybrown;
  }
   /* start styling work section*/
-  .work-i{
-    border-right: 3px solid black;
-  }
+
   .work-i h2 {
-    font-size:40px 
+    font-size:40px;
+    border-right: 3px solid #ff6600;
+    width:200px ;
+    height:100%;
+   
   }
   .workprojects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 20px;
     margin: 0 auto 35px auto;
     width: 50%;
+   
+  
+    }
+    .project1{
+      position: relative;
     }
   
-  .project1 img { 
-       
+  .project1 img {   
     border:solid 3px thistle;
     max-width: 100%;
     height: auto;
     border-radius: 15px;
   }
-   .text1   {
-    position: absolute;
-    
-    background-color: black;
+   .project1 h3  {
+     position: absolute;
+    background-color: #ff6600;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -182,36 +199,58 @@ header {
   }
   .project1 img:hover {
     
-    border:solid 6px rgb(117, 82, 117);
+    border:solid 6px #ff6600;
     max-width: 100%;
     height: auto;
-    box-shadow: red;
+    box-shadow: #ff6600;
   }
   .project2 img:hover{
     width: 320px;
     height: 200px;
-    border:solid 6px rgb(117, 82, 117) ;
+    border:solid 6px #ff6600 ;
     max-width: 100%;
-    box-shadow: red;
+    box-shadow: #ff6600;
   }
   .project3 img:hover{
     width: 320px;
     height: 200px;
-    border:solid 6px rgb(117, 82, 117) ;
+    border:solid 6px #ff6600 ;
     max-width: 100%;
-    box-shadow: red;
+    box-shadow: #ff6600;
   }
   .project4 img:hover{
     width: 320px;
     height: 200px;
-    border:solid 6px rgb(117, 82, 117) ;
+    border:solid 6px #ff6600 ;
     max-width: 100%;
-    box-shadow: red;
+    box-shadow: #ff6600;
   }
   .project5 img:hover {
     width: 320px;
     height: 200px;
-    border:solid 6px rgb(117, 82, 117) ;
+    border:solid 6px #ff6600 ;
     max-width: 100%;
-    box-shadow: red;
+    box-shadow: #ff6600;
   }
+  /*fooooter*/
+  footer {
+    background-image: url(../images/back11.jpeg);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  footer h2 {
+   text-align: center;
+   font-size:40px;
+    border-right: 3px solid #ff6600;
+    width:200px ;
+    height:100%;
+  }
+  .contact-me div a { 
+    font-size: 2em;
+    color:#ff6600;   
+  }
+  
