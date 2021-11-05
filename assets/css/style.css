@@ -27,7 +27,7 @@ header {
     color: rgb(0, 0, 0);
     text-shadow: 0 0 10px #e7945d;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
   } 
   
@@ -54,14 +54,14 @@ header {
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.80vw;
+    font-size: 2.5vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-style: italic;
-    
+    text-shadow: 0 0 10px #e7945d;
   }
   header nav ul li a:hover {
     background-color:#ff6600;
-    color:rgb(104, 84, 173);
+    color:white;
     border-radius: 15px;
     text-shadow: none;
   }
@@ -90,10 +90,10 @@ header {
     flex: 2;
     justify-content:flex-end;
     color:black ;
-    font-size: 60px;
+    font-size: 40px;
     margin: auto;
     border-radius: 20px;
-    background-color: rgb(110, 149, 185);
+    background-color: rgb(230 230 230);
     font-style:italic;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
  }
@@ -108,7 +108,9 @@ header {
       width: 250px;
     }
     /* end style section*/
-
+.about-i ,.work-i{
+  background-color: rgb(230 230 230);
+ }
     /* style section 2*/
     .about-i {
       display: flex;
@@ -123,6 +125,7 @@ header {
         width:200px ;
         height:100%;
         margin: 0 auto 35px auto;
+        text-shadow: 0 0 10px #e7945d;
      }
   .about-i2 p {
     position: relative;
@@ -141,6 +144,7 @@ header {
     border-right: 3px solid #ff6600;
     width:200px ;
     height:100%;
+    text-shadow: 0 0 10px #e7945d;
    
   }
   .workprojects {
@@ -152,7 +156,7 @@ header {
    
   
     }
-    .project1{
+    .project1,.project2,.project3,.project4,.project5{
       position: relative;
     }
   
@@ -162,12 +166,14 @@ header {
     height: auto;
     border-radius: 15px;
   }
-   .project1 h3  {
+   .workprojects h3  {
      position: absolute;
+     bottom: 20px;
     background-color: #ff6600;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 50%;
   }
   .project2 img {
     width: 320px;
@@ -248,9 +254,100 @@ header {
     border-right: 3px solid #ff6600;
     width:200px ;
     height:100%;
+    text-shadow: 0 0 10px #e7945d;
   }
   .contact-me div a { 
-    font-size: 2em;
+    font-size: 1.6em;
     color:#ff6600;   
   }
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
   
+
+.project1 img{
+  width: 320px;
+    height: 200px;
+    border:solid 3px thistle ;
+    max-width: 100%;
+    border-radius: 15px;
+}
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+    border-right: 0;
+  }
+
+  .one img , .one h3{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .one h3 {
+    text-align: center;
+  }
+}
+  
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  
+  
+  .about-i {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  .workprojects img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+.about-im {
+  font-size: small;
+  text-align: center;
+    justify-content: center;
+}
+ 
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+  
+
+ .workprojects > * {
+    flex: 0 100%;
+  }
+}
+
