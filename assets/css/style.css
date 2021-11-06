@@ -1,21 +1,24 @@
+:root {
+  --color1: darkblue;
+  --color2:white; 
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-
+/* ------------------------------------------------------------------------------ */
   /* HEADER / NAV BAR STYLES START */
 header {
     padding: 20px 35px;
-    background-color: rgb(241, 241, 241);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url(../images/back11.jpeg);
+    background-image: url(../images/back20.jpeg);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -24,31 +27,25 @@ header {
   header h1 {
     font-weight: bold;
     margin: 0;
-    color: rgb(0, 0, 0);
+    color: var (--color2);
     text-shadow: 0 0 10px #e7945d;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
     font-style: italic;
   } 
-  
-  header a {
+   header a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: var(--color2);
   }
-  
-  header nav {
-    margin: 7px 0;
-   
-   
+   header nav {
+    margin: 7px 0; 
   }
-  
-  header nav ul {
+    header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
-    
+    list-style: none;   
   }
   
   header nav ul li a {
@@ -65,35 +62,31 @@ header {
     border-radius: 15px;
     text-shadow: none;
   }
-  
-  /* HEADER / NAVBAR STYLES END */
+    /* HEADER / NAVBAR STYLES END */
 
-
-  /* style section*/
+/* ------------------------------------------------------------------------------ */
+  /* style my picture section*/
   section {
-   
     padding: 60px;
     display: flex;
     justify-content: space-between;
   }
 
   .one { 
-   
-    background-image:url(../images/back11.jpeg) ;
+    background-image:url(../images/back20.jpeg) ;
     background-size: 100% 100%;
     height:500PX;
     align-items: center;
     flex-wrap: wrap;
-  
   }
   .one div h3{
     flex: 2;
     justify-content:flex-end;
-    color:black ;
-    font-size: 40px;
+    color: var(--color2);
+    font-size: 60px;
     margin: auto;
     border-radius: 20px;
-    background-color: rgb(230 230 230);
+    background-color: rgb(72, 128, 211);
     font-style:italic;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
  }
@@ -101,17 +94,16 @@ header {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    border:rgb(241, 241, 241) solid 5px;
+    border:var(--color2) solid 5px;
     }
     .one div img:hover{
       height: 250px;
       width: 250px;
     }
-    /* end style section*/
-.about-i ,.work-i{
-  background-color: rgb(230 230 230);
- }
-    /* style section 2*/
+    /* end style my picture section*/
+
+ /* ------------------------------------------------------------------------------ */
+    /* style about me section 2*/
     .about-i {
       display: flex;
       justify-content:space-between;
@@ -119,9 +111,10 @@ header {
       }
 
       .about-i1 h2{
+        color: #ff6600;
         font-size:40px;
         flex-grow: 0;
-        border-right: 3px solid #ff6600;
+        border-right: 10px solid #ff6600;
         width:200px ;
         height:100%;
         margin: 0 auto 35px auto;
@@ -129,22 +122,27 @@ header {
      }
   .about-i2 p {
     position: relative;
-    font-size: 35px;
-    color: black;
+    font-size: 25px;
+    color: white;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
     text-shadow: rosybrown;
  }
+ /* end start styling about me section*/
+   .about-i ,.work-i{
+    background-color:rgb(72, 128, 211)}
+    /* ------------------------------------------------------------------------------ */
   /* start styling work section*/
-
+  
   .work-i h2 {
+    color: #ff6600;
     font-size:40px;
-    border-right: 3px solid #ff6600;
+    border-right: 10px solid #ff6600;
     width:200px ;
     height:100%;
-    text-shadow: 0 0 10px #e7945d;
+    text-shadow: 0 0 10px rosybrown;
    
   }
   .workprojects {
@@ -154,14 +152,13 @@ header {
     margin: 0 auto 35px auto;
     width: 50%;
    
-  
     }
     .project1,.project2,.project3,.project4,.project5{
       position: relative;
     }
   
   .project1 img {   
-    border:solid 3px thistle;
+    border:solid 7px var(--color1);
     max-width: 100%;
     height: auto;
     border-radius: 15px;
@@ -169,7 +166,7 @@ header {
    .workprojects h3  {
      position: absolute;
      bottom: 20px;
-    background-color: #ff6600;
+    background-color: var(--color1);
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -178,69 +175,71 @@ header {
   .project2 img {
     width: 320px;
     height: 200px;
-    border:solid 3px thistle ;
+    border:solid 7px var(--color1) ;
     max-width: 100%;
     border-radius: 15px;
   }
   .project3 img {
     width: 320px;
     height: 200px;
-    border:solid 3px thistle ;
+    border:solid 7px var(--color1) ;
     max-width: 100%;
     border-radius: 15px;
   }
   .project4 img {
     width: 320px;
     height: 200px;
-    border:solid 3px thistle ;
+    border:solid 7px var(--color1) ;
     max-width: 100%;
     border-radius: 15px;
   }
   .project5 img {
     width: 320px;
     height: 200px;
-    border:solid 3px thistle ;
+    border:solid 7px var(--color1);
     max-width: 100%;
     border-radius: 15px;
   }
   .project1 img:hover {
     
-    border:solid 6px #ff6600;
+    border:solid 10px #ff6600;
     max-width: 100%;
     height: auto;
-    box-shadow: #ff6600;
+    box-shadow: var(--color1);
   }
   .project2 img:hover{
     width: 320px;
     height: 200px;
-    border:solid 6px #ff6600 ;
+    border:solid 10px #ff6600 ;
     max-width: 100%;
-    box-shadow: #ff6600;
+    box-shadow: var(--color1);
   }
   .project3 img:hover{
     width: 320px;
     height: 200px;
-    border:solid 6px #ff6600 ;
+    border:solid 10px #ff6600 ;
     max-width: 100%;
-    box-shadow: #ff6600;
+    box-shadow: var(--color1);
   }
   .project4 img:hover{
     width: 320px;
     height: 200px;
-    border:solid 6px #ff6600 ;
+    border:solid 10px #ff6600;
     max-width: 100%;
-    box-shadow: #ff6600;
+    box-shadow: var(--color1);
   }
   .project5 img:hover {
     width: 320px;
     height: 200px;
-    border:solid 6px #ff6600 ;
+    border:solid 10px #ff6600;
     max-width: 100%;
-    box-shadow: #ff6600;
+    box-shadow: var(--color1);
   }
-  /*fooooter*/
+  /* end styling work section*/
+/* ------------------------------------------------------------------------------ */
+  /* apply style to footer */
   footer {
-    background-image: url(../images/back11.jpeg);
+    background-image: url(../images/back20.jpeg);
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
@@ -249,17 +248,36 @@ header {
     align-items: center;
   }
   footer h2 {
+    color: #ff6600;
    text-align: center;
    font-size:40px;
-    border-right: 3px solid #ff6600;
+    border-right: 10px solid #ff6600;
     width:200px ;
     height:100%;
-    text-shadow: 0 0 10px #e7945d;
+    text-shadow: 0 0 10px rosybrown;
   }
   .contact-me div a { 
     font-size: 1.6em;
-    color:#ff6600;   
+    color:var(--color2);
+    padding: 10px 15px;   
   }
+  .contact-me div a:hover {
+    background-color:#ff6600;
+    color:var(--color1);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  /* end styling work section*/
+/* ------------------------------------------------------------------------------ */
+@media screen and (max-width: 1399px) { 
+  .project1 img{
+  width: 320px;
+  height: 200px;
+  border:solid 7px var(--color1)  ;
+  max-width: 100%;
+  border-radius: 15px;
+}
+}
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
@@ -267,87 +285,74 @@ header {
     justify-content: center;
     position: relative;
   }
-
   header h1 {
     width: 100%;
     text-align: center;
   }
-
   header nav ul {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
   }
-
   header nav ul li a {
     font-size: 20px;
   }
-  
-
-.project1 img{
-  width: 320px;
-    height: 200px;
-    border:solid 3px thistle ;
-    max-width: 100%;
-    border-radius: 15px;
-}
+  .workprojects img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;    
+  }
   footer h2, footer div {
     text-align: center;
     width: 100%;
     border-right: 0;
   }
-
-  .one img , .one h3{
+   
+  .one img,.one h3{
     width: 100%;
     text-align: center;
-  }
-  
+  }  
   .one h3 {
     text-align: center;
   }
 }
-  
+
+  /* ------------------------------------------------------------------------------ */
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  
-  
+  .work-i {
+    display: flex;
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .work-i h2 {
+    border: none;
+  }
+ 
   .about-i {
     flex: 2 100%;
     text-align: center;
     justify-content: center;
-    
+    flex-wrap: wrap;
   }
-
-  .workprojects img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .about-i1 h2 {
+    border-right: none;
   }
-.about-im {
-  font-size: small;
+.about-i2 p{
+  font-size: 15px;
   text-align: center;
-    justify-content: center;
+  justify-content: center;
+   width: 100%;
 }
- 
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
-    width: 95%;
-  }
-
-  .intro p {
-    width: 100%;
-  }
-  
-
- .workprojects > * {
+   .workprojects > * {
     flex: 0 100%;
   }
 }
 
+/* ------------------------------------------------------------------------------ */
