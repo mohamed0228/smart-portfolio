@@ -107,7 +107,7 @@ header {
     .about-i {
       display: flex;
       justify-content:space-between;
-      align-items: center;
+      align-items:flex-start ;
       }
 
       .about-i1 h2{
@@ -115,10 +115,9 @@ header {
         font-size:40px;
         flex-grow: 0;
         border-right: 10px solid #ff6600;
-        width:200px ;
-        height:100%;
         margin: 0 auto 35px auto;
         text-shadow: 0 0 10px #e7945d;
+        padding-right:15px;
      }
   .about-i2 p {
     position: relative;
@@ -140,9 +139,9 @@ header {
     color: #ff6600;
     font-size:40px;
     border-right: 10px solid #ff6600;
-    width:200px ;
     height:100%;
     text-shadow: 0 0 10px rosybrown;
+    padding-right: 15px;
    
   }
   .workprojects {
@@ -159,8 +158,7 @@ header {
   
   .project1 img {   
     border:solid 7px var(--color1);
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     border-radius: 15px;
   }
    .workprojects h3  {
@@ -252,9 +250,8 @@ header {
    text-align: center;
    font-size:40px;
     border-right: 10px solid #ff6600;
-    width:200px ;
-    height:100%;
     text-shadow: 0 0 10px rosybrown;
+    padding-right: 15px;
   }
   .contact-me div a { 
     font-size: 1.6em;
@@ -307,6 +304,7 @@ header {
     text-align: center;
     width: 100%;
     border-right: 0;
+    padding-right: 0;
   }
    
   .one img,.one h3{
@@ -321,15 +319,24 @@ header {
   /* ------------------------------------------------------------------------------ */
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+  .one {
+    flex-direction: column;
+    align-items: center;
+  }
+  .one div h3 {
+    font-size: 45px;
+  }
+  
   .work-i {
-    display: flex;
+   flex-direction: column;
     flex: 2 100%;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
   .work-i h2 {
     border: none;
+    padding-right: 0;
   }
  
   .about-i {
@@ -340,6 +347,7 @@ header {
   }
   .about-i1 h2 {
     border-right: none;
+    padding-right: 0;
   }
 .about-i2 p{
   font-size: 15px;
@@ -349,10 +357,13 @@ header {
 }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 650px) {
    .workprojects > * {
     flex: 0 100%;
   }
+  .one div h3 {
+    font-size: 30px;
+  }
 }
-
+s
 /* ------------------------------------------------------------------------------ */
