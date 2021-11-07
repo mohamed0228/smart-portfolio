@@ -29,7 +29,7 @@ header {
     margin: 0;
     color: var (--color2);
     text-shadow: 0 0 10px #e7945d;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 30px;
     font-style: italic;
   } 
@@ -99,6 +99,7 @@ header {
     .one div img:hover{
       height: 250px;
       width: 250px;
+      border-color: #ff6600;
     }
     /* end style my picture section*/
 
@@ -152,7 +153,7 @@ header {
     width: 50%;
    
     }
-    .project1,.project2,.project3,.project4,.project5{
+    .project1,.project2{
       position: relative;
     }
   
@@ -170,39 +171,17 @@ header {
     padding-right: 20px;
     border-radius: 50%;
   }
-  .project2 img {
+  .project2 img{
     width: 320px;
     height: 200px;
     border:solid 7px var(--color1) ;
     max-width: 100%;
     border-radius: 15px;
-  }
-  .project3 img {
-    width: 320px;
-    height: 200px;
-    border:solid 7px var(--color1) ;
-    max-width: 100%;
-    border-radius: 15px;
-  }
-  .project4 img {
-    width: 320px;
-    height: 200px;
-    border:solid 7px var(--color1) ;
-    max-width: 100%;
-    border-radius: 15px;
-  }
-  .project5 img {
-    width: 320px;
-    height: 200px;
-    border:solid 7px var(--color1);
-    max-width: 100%;
-    border-radius: 15px;
-  }
+  } 
   .project1 img:hover {
     
     border:solid 10px #ff6600;
     max-width: 100%;
-    height: auto;
     box-shadow: var(--color1);
   }
   .project2 img:hover{
@@ -212,33 +191,14 @@ header {
     max-width: 100%;
     box-shadow: var(--color1);
   }
-  .project3 img:hover{
-    width: 320px;
-    height: 200px;
-    border:solid 10px #ff6600 ;
-    max-width: 100%;
-    box-shadow: var(--color1);
-  }
-  .project4 img:hover{
-    width: 320px;
-    height: 200px;
-    border:solid 10px #ff6600;
-    max-width: 100%;
-    box-shadow: var(--color1);
-  }
-  .project5 img:hover {
-    width: 320px;
-    height: 200px;
-    border:solid 10px #ff6600;
-    max-width: 100%;
-    box-shadow: var(--color1);
-  }
+  
+ 
   /* end styling work section*/
 /* ------------------------------------------------------------------------------ */
   /* apply style to footer */
   footer {
     background-image: url(../images/back20.jpeg);
-    padding: 40px 35px;
+    padding: 25px 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -266,6 +226,7 @@ header {
   }
   /* end styling work section*/
 /* ------------------------------------------------------------------------------ */
+
 @media screen and (max-width: 1399px) { 
   .project1 img{
   width: 320px;
@@ -305,6 +266,7 @@ header {
     width: 100%;
     border-right: 0;
     padding-right: 0;
+    padding-top: 7px;
   }
    
   .one img,.one h3{
@@ -365,5 +327,5 @@ header {
     font-size: 30px;
   }
 }
-s
+
 /* ------------------------------------------------------------------------------ */
